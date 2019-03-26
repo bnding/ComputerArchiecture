@@ -1,0 +1,5 @@
+all: third-2
+third-2: third-2.c
+	gcc -Wall -Werror -fsanitize=address third-2.c -o third-2
+clean:
+	rm -rf third-2
